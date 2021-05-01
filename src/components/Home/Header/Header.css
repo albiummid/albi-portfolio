@@ -1,0 +1,125 @@
+.header{
+    background-color:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:#ccd6f6 ;
+    margin-top: 20vh;
+    
+}
+.header h1{
+    font-size: 4rem;
+}
+.intro{
+    padding: 10px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+.logo-img{
+    background-color: transparent;
+    height: 55px;
+}
+.intro p{
+    max-width: 60vh;
+    padding: 20px 0;
+    text-align: justify;
+}
+.typewriter span{
+    background-color: transparent;
+    color: red;
+    font-family: Righteous;
+}
+.intro-line span{
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s ease-in-out color;
+}
+
+.intro-line span:hover{
+    display: inline-block;
+    animation: swift .7s ease-in-out forwards;
+    color:red;
+    
+}
+
+.header-img img{
+    width: 100%;
+    padding-bottom: 100px;
+   
+}
+
+.header-img{
+    width: 400px;
+    position: relative;
+    background-color: transparent;
+}
+.header-img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 83%;
+    min-width: 380px;
+    max-height: 84%;
+    border: 2px solid #64ffda;
+    z-index: -1;
+
+}
+
+.header-img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    opacity: .9;
+
+}
+
+.main-btn{
+    padding: 1.2rem 1.73rem;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .9;
+    transition: all .3s ease-in-out;
+    font-size: large;
+    font-weight: 700;
+}
+.main-btn:active{
+    opacity: .7;
+}
+.main-btn:hover{
+    opacity: 1;
+    background-color: #64ffda;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+@keyframes swift {
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1); 
+    }
+}

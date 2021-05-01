@@ -1,0 +1,21 @@
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    animation: logoAni 2s ease-in-out;
+    transition: transform 2s ease;
+}
+
+@keyframes logoAni{
+    from{
+   
+        opacity: 0;
+        transform: scale(0.7) rotate(-180deg);
+    }
+    To{
+        opacity: 1;
+        transform: scale(1);
+ 
+    }
+}

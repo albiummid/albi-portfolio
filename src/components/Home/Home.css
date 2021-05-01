@@ -1,0 +1,11 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-color: transparent;
+}
+@media (max-width:480px){
+    .container{
+width: 100%;
+    }
+}
