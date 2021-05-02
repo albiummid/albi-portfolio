@@ -1,0 +1,56 @@
+.contact-img img{
+    width: 100%;
+}
+.contact-img {
+    max-width: 400px;
+}
+.contact-container{
+    border: 1px solid #64ffda;
+    justify-content: space-between;
+    padding: 10px ;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,400px);
+}
+.contact-container form{
+    width: 100%;
+}
+.contact-container input , .contact-container textarea{
+width: 100%;
+}
+.contact-container textarea{
+    height: 100%;
+}
+#contactUs{
+    margin: 50px auto;
+}
+
+.form-container{
+    max-width: 600px;
+    box-shadow: 0 10px 30px gray;
+border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+form{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    flex-direction: column;
+ 
+    max-width: 600px;
+}
+input,textarea{
+border: 1px solid teal;
+border-radius: 5px;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    color: #000;
+}
+select{
+    width: 80px;
+}

@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import aboutImg from '../../../images/about-img.jpg'
 const About = () => {
     return (
-        <section className="section-container">
+        <section id="about" className="section-container">
             <div className="section-header">
             <h2><span>1.</span> About Me</h2>
             </div>

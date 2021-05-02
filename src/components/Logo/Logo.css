@@ -1,6 +1,7 @@
 .logo img{
     display: flex;
     justify-content: center;
+    width: 100px;
     align-items: center;
     margin: 0 auto;
     animation: logoAni 2s ease-in-out;

@@ -29,7 +29,7 @@ const ProjectCard = ({ data }) => {
                 </p>
                 <div className="tools-container">
                     {
-                        tools.map(tool => <button className="disable-btn" disabled="disabled">{ tool }</button>)
+                        tools.map(tool => <button key={tool} className="disable-btn" disabled="disabled">{ tool }</button>)
                     }
                 </div>
                 <div className="link-container">

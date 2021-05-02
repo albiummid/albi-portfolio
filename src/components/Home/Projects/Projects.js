@@ -4,7 +4,7 @@ import projectData from './ProjectData'
 const Projects = () => {
     console.log(projectData);
     return (
-        <section className="section-container">
+        <section id="project" className="section-container">
             <div className="section-header">
                 <h2>
                     <span>3. </span> Some Things I’ve Built 
