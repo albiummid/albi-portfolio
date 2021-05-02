@@ -1,4 +1,5 @@
 .section-header{
+    border-bottom: 1px solid teal;
     margin: 50px;
     text-align: center;
     padding-bottom: 30px;
@@ -6,9 +7,7 @@
 .section-header span{
     color:#64ffda ;
 }
-.section-header h2{
-    border-bottom: 1px solid teal;
-}
+
 .section-container{
         width: 80%;
     margin: 100px auto;

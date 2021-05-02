@@ -98,10 +98,16 @@
     font-size: large;
     font-weight: 700;
 }
+.dwn{
+    color: #64ffda;
+}
+.dwn:hover , .resume-link:hover{
+    color:black;
+}
 .main-btn:active{
     opacity: .7;
 }
-.main-btn:hover{
+.main-btn:hover {
     opacity: 1;
     background-color: #64ffda;
     color: black;

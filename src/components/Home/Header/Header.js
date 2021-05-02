@@ -67,9 +67,9 @@ const Header = () => {
                 <br />
                 <br/>
 
-                <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing">
+                <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing" target="_blank" rel="noreferrer">
                     <button className="main-btn">
-                        Download Resume
+                 Resume
                </button>
                 </a>
             </div>

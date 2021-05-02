@@ -30,7 +30,7 @@ const particlesConfig = {
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 5,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -40,7 +40,7 @@ const particlesConfig = {
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 10,
+        "speed": 20,
         "size_min": 0.1,
         "sync": false
       }
@@ -82,7 +82,7 @@ const particlesConfig = {
     },
     "modes": {
       "grab": {
-        "distance": 100,
+        "distance": 200,
         "line_linked": {
           "opacity": 1
         }
@@ -92,7 +92,7 @@ const particlesConfig = {
         "size": 100,
         "duration": 2,
         "opacity": 8,
-        "speed": 3
+        "speed": 5
       },
       "repulse": {
         "distance": 100,
