@@ -32,6 +32,9 @@ const Navbar = () => {
                         <NavLink className="nav-link" activeClassName="nav-link-active" smooth to="#project">3. Projects </NavLink>
                     </li>
                     <li className="nav-item">
+                        <NavLink className="nav-link" activeClassName="nav-link-active" smooth to="#contact">4. Get In Touch </NavLink>
+                    </li>
+                    <li className="nav-item">
                     <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing" target="_blank" rel="noreferrer">
                     <button className="main-btn">
                  Resume
