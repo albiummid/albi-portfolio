@@ -1,17 +1,22 @@
 .header{
+    min-height: 75vh;
     background-color:transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     color:#ccd6f6 ;
     margin-top: 20vh;
+    margin-bottom: 50px;
     
 }
 .header h1{
     font-size: 4rem;
 }
 .intro{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px ;
     margin-bottom: 50px;
     line-height: 1.2;
 }
@@ -22,7 +27,9 @@
 .intro p{
     max-width: 60vh;
     padding: 20px 0;
-    text-align: justify;
+    text-align: left;
+    font-size: large;
+    line-height: 1.5;
 }
 .typewriter span{
     background-color: transparent;
@@ -37,7 +44,7 @@
 
 .intro-line span:hover{
     display: inline-block;
-    animation: swift .7s ease-in-out forwards;
+    animation: swift .5s ease-in-out forwards;
     color:red;
     
 }
@@ -49,7 +56,8 @@
 }
 
 .header-img{
-    width: 400px;
+    max-width: 350px;
+    height:473px ;
     position: relative;
     background-color: transparent;
 }
@@ -60,9 +68,7 @@
     top: 20px;
     left: 20px;
     width: 100%;
-    height: 83%;
-    min-width: 380px;
-    max-height: 84%;
+    height: 100%;
     border: 2px solid #64ffda;
     z-index: -1;
 

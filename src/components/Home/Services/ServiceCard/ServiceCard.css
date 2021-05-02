@@ -1,0 +1,40 @@
+.service-card img{
+margin-inline:  auto;
+width: 100px;
+}
+.service-card img:hover{
+animation: shake .8s ease-in-out;
+}
+.service-card{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: 100px 40px 1fr;
+    max-width: 350px;
+    padding: 40px 20px;
+    border-radius: 10px ;
+    border: 1px solid #64ffda;
+    transition: all .6s ;
+}
+.service-card:hover{
+    cursor: pointer;
+    background-color: #64ffda;
+}
+.service-card:hover > *{
+    color: black;
+}
+.service-card p{
+    text-align: center;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

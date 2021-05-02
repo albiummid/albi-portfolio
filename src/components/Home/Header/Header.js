@@ -2,9 +2,13 @@ import React from 'react';
 import './Header.css'
 import admin from '../../../images/user-header.jpg'
 import Typewriter from 'typewriter-effect'
+import Fade from 'react-reveal/Fade';
+import ParticleBackground from '../../Particle/ParticleBackground';
 const Header = () => {
     return (
-        <section className="header">
+        <ParticleBackground>
+            <section className="header">
+            <Fade left>
             <div className='intro'>
                 <h1 className="intro-line">
                     <span>H</span>
@@ -16,7 +20,7 @@ const Header = () => {
                     <span>'</span>
                     <span>m</span>
                     <b> </b>
-                    <span style={{color:"red",fontFamily:"Righteous"}}>A</span>
+                    <span style={{ color: "red", fontFamily: "Righteous" }}>A</span>
                     <span>l</span>
                     <span>b</span>
                     <span>i</span>
@@ -28,7 +32,7 @@ const Header = () => {
                     <span>i</span>
                     <span>l</span>
                     <span>d</span>
-                        <b> </b>
+                    <b> </b>
                     <span>t</span>
                     <span>h</span>
                     <span>i</span>
@@ -49,32 +53,36 @@ const Header = () => {
                     <span>b</span>
                 </h1>
                 <div>
-                <h1 className="typewriter">
+                    <h1 className="typewriter">
                         <Typewriter
-                          options={{
-                            strings: ['Web Developer', 'Js Developer ','React Developer.'],
-                            autoStart: true,
-                            loop: true,
-                          }}
-                    />
+                            options={{
+                                strings: ['Web Developer', 'Js Developer ', 'React Developer.'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
 
-                </h1>
+                    </h1>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, rem eveniet. Ea mollitia, ipsa cupiditate nobis laudantium ut sed quidem praesentium distinctio! Soluta expedita assumenda qui maxime officiis enim earum neque suscipit veritatis perspiciatis dicta perferendis, fuga ullam, ratione aspernatur nemo quisquam nam atque magni? Laudantium iure repellat maxime asperiores?</p>
-                
-                <a href ="mailto:albi.ummid@gmail.com">
-                <button className="main-btn">
-                Get In Touch
+                <br />
+                <br/>
+
+                <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing">
+                    <button className="main-btn">
+                        Download Resume
                </button>
-            </a>
+                </a>
             </div>
+           </Fade>
+            <Fade top>
             <div className="header-img">
-                <img src={admin} alt=""/>
-               
+                <img src={admin} alt="" />
             </div>
-            
-            
+            </Fade>
+
+
         </section>
+        </ParticleBackground>
     );
 };
 
