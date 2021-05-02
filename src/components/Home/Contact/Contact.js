@@ -8,9 +8,9 @@ const Contact = () => {
     
         emailjs.sendForm('service_9gzw9xj', 'template_al7ex9l', e.target, 'user_f4Q4w652L2ya4ymbYdO4H')
           .then((result) => {
-              alert("your data submitted")
+              alert("Your message submitted")
           }, (error) => {
-              alert("data sending failed!")
+              alert("Message sending failed!")
           });
       }
     return (
