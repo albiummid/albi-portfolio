@@ -2,15 +2,16 @@ import React from "react";
 import './App.css';
 import Home from './components/Home/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from "./components/Shared/Footer/Footer";
+import Navbar from "./components/Shared/Navbar/Navbar";
 function App() {
+
   return (
     <Router>
-      <Navbar/>
+        <Navbar />
       <Switch>
         <Route path="/">
-          <Home />
+          <Home  />
         </Route>
       </Switch>
       <Footer/>

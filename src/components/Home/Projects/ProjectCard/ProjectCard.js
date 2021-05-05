@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import Fade from 'react-reveal/Fade';
 import './ProjectCard.css'
+import Jello from 'react-reveal/Jello';
+import Zoom from 'react-reveal/Zoom';
 
 const ProjectCard = ({ data }) => {
     const { images, title, liveLink,description, repoLink, id,tools } = data;
@@ -10,11 +12,12 @@ const ProjectCard = ({ data }) => {
         <div className={id % 2 === 0 ? "flex-reverse project-container" : "flex-normal project-container"}>
             <Fade right>
             <div className="project-image ">
-                <Carousel   >
+                    <Carousel   >
                     {
                         images.map(image=> <img className="sliderImg" src={image} alt=""/> )
                     }
                 </Carousel>
+            
             </div>
             </Fade>
             <Fade left>

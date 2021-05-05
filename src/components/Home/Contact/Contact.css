@@ -1,5 +1,6 @@
 .contact-img img{
     width: 100%;
+    padding: 0px 20px;
 }
 .contact-img {
     max-width: 400px;
@@ -9,14 +10,12 @@
     justify-content: center;
     padding: 10px ;
     border-radius: 10px;
-    margin: 0 auto;
-    max-width: 900px;
-    display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit,400px);
-}
-.contact-container form{
-    width: 100%;
+    margin: 0 auto;
+    max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .contact-container input , .contact-container textarea{
 width: 100%;
@@ -27,30 +26,20 @@ width: 100%;
 #contactUs{
     margin: 50px auto;
 }
-
 .form-container{
-    max-width: 600px;
-    box-shadow: 0 10px 30px gray;
-border-radius: 10px;
-    margin: 10px auto;
-    padding: 10px;
+   width: 400px;
 }
 form{
     display: flex;
     margin: 0 auto;
     padding: 10px;
+    max-width: 100%;
     flex-direction: column;
- 
-    max-width: 600px;
 }
 input,textarea{
 border: 1px solid teal;
 border-radius: 5px;
-    width: 90%;
     margin: 10px auto;
     padding: 10px;
     color: #000;
-}
-select{
-    width: 80px;
 }

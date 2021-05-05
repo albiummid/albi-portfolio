@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import {HashLink as NavLink} from 'react-router-hash-link'
+import React, { useEffect, useState } from 'react';
+import {NavHashLink as NavLink} from 'react-router-hash-link'
 import './Navbar.css'
 import Logo from '../../Logo/Logo';
 const Navbar = () => {
@@ -10,11 +10,29 @@ const Navbar = () => {
     const closeMobileMenu = () => {
         setClick(false);
     }
-    
+    const [scrolled,setScrolled]=React.useState(false);
+const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 200 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
+let navbarClasses=['navbar'];
+  if(scrolled){
+    navbarClasses.push('scrolled');
+  }
+   
     return (
         <>
-            <nav className="navbar">
-                <NavLink to="/" className="logo-div"><span><Logo/></span><span>Albi Ummid Tanvir</span> </NavLink>
+            <nav className={scrolled? "navbar scrolled" : "navbar"}>
+                <NavLink smooth to="/" className="logo-div"><span><Logo /></span><span>Albi Ummid Tanvir</span> </NavLink>
 
                  <div className="menu-icon" onClick={handleClick}>
                     {
@@ -32,11 +50,11 @@ const Navbar = () => {
                         <NavLink className="nav-link" activeClassName="nav-link-active" smooth to="#project">3. Projects </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" activeClassName="nav-link-active" smooth to="#contact">4. Get In Touch </NavLink>
+                        <NavLink className="nav-link"activeClassName="nav-link-active"  smooth to="#contact">4. Get In Touch </NavLink>
                     </li>
                     <li className="nav-item">
                     <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing" target="_blank" rel="noreferrer">
-                    <button className="main-btn">
+                    <button className="main-btn navB">
                  Resume
                </button>
                 </a>

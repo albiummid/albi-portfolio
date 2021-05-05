@@ -1,11 +1,27 @@
 .navbar{
     display:flex;
     justify-content: space-between;
-   padding:0 30px;
-    height:10vh;
-    background-color:hsl(203, 21%, 15%) ;
+    padding:0 30px;
+    height:100px;
+    background-color:#1d1d1d ;
+    border: 1px solid #1d1d1d;
+    opacity: .9;
     align-items:center;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
 }
+
+.scrolled{
+  box-shadow: 0px 0px 30px black;
+}
+.navB{
+  padding: .75rem 1rem;
+}
+
 .nav-links{
     display:flex;
     
@@ -85,14 +101,15 @@ transition: all 0.2s ease-in;
 @media(max-width:1024px) {
     .nav-item{
      
-        height: 90px;
+        height: 80px;
+        padding-bottom: 20px;
       }
       .nav-links{
         display: flex;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 79px;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -104,19 +121,17 @@ transition: all 0.2s ease-in;
         transition: all 0.5s ease;
         z-index: 1;
       }
-      .nav-link,.user-name {
+      .nav-link {
         text-align: center;
-        padding: 2rem;
-        width: 100%;
+        padding:.75rem  2rem;
+        margin: 0 auto;
         display: table;
         transition: all .4s ease;
       }
     
       .nav-link:hover {
-        background-color: #17a2b8;
-        border-radius: 0;
-        width: 50%;
-        margin: 0 auto;
+        background-color: #64ffda;
+      
       }
       .menu-icon {
         display: block;
@@ -126,24 +141,6 @@ transition: all 0.2s ease-in;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-      }
-      .nav-link-mobile {
-        display: block;
-        text-align: center;
-        padding: 1.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        background: #17a2b8;
-        text-decoration: none;
-        color: #fff;
-        width: 50%;
-        transition: all .4s ease;
-      }
-      .nav-link-mobile:hover {
-        
-        background: #fff;
-        color: #17a2b8;
-      
       }
       .navbar {
         width: 100%;

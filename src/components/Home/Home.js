@@ -5,15 +5,15 @@ import Header from './Header/Header';
 import './Home.css'
 import Projects from './Projects/Projects';
 import Services from './Services/Services';
-const Home = () => {
+const Home = ({element}) => {
     return (
-        <>
+        <div id="home">
             <Header />
             <About />
             <Services />
             <Projects />
             <Contact/>
-        </>
+        </div>
     );
 };
 

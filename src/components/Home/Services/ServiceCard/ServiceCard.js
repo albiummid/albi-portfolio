@@ -1,20 +1,23 @@
 import React from 'react';
 import './ServiceCard.css'
 import Fade from 'react-reveal/Fade';
+import Jello from 'react-reveal/Jello';
 const ServiceCard = ({ data }) => {
     const { icon, title, description } = data;
     return (
-        <Fade bottom >
+        
             <div className="service-card">
-                <Fade right>
+                <Jello>
                 <img src={icon} alt="" />
-                </Fade>
-                <h2>{title}</h2>
+                </Jello>
+            <Fade left>
+            <h2>{title}</h2>
                 <p>
                     {description}
                 </p>
+               </Fade>
             </div>
-        </Fade>
+     
 
     );
 };

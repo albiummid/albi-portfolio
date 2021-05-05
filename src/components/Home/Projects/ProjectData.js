@@ -1,5 +1,4 @@
 import bongoHome from '../../../images/bongo-library/home.png';
-import bongoLogin from '../../../images/bongo-library/login-page.png'
 import bongoAdmin from '../../../images/bongo-library/admin-pannel.png';
 import spectaHome from '../../../images/specta/home.png'
 import spectaService from '../../../images/specta/services.png'
@@ -30,7 +29,6 @@ import cInfoHome from '../../../images/country-info/home.png';
         tools:[ "React","CSS3","Firebase","MongoDB","Node Js","Express Js", ],
         images: [
             bongoHome,
-            bongoLogin,
             bongoAdmin
         
         ],
@@ -61,7 +59,7 @@ import cInfoHome from '../../../images/country-info/home.png';
             cInfoDetails
         ],
         title: "Country Info",
-        liveLink: "https://country-info.web.app",
+        liveLink: "https://country-info-albi.netlify.app",
     repoLink:"https://github.com/albiummid/country-info"
     } ,
 ]

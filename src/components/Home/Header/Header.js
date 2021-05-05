@@ -4,10 +4,12 @@ import admin from '../../../images/user-header.jpg'
 import Typewriter from 'typewriter-effect'
 import Fade from 'react-reveal/Fade';
 import ParticleBackground from '../../Particle/ParticleBackground';
+import RubberBand from 'react-reveal/RubberBand';
+
 const Header = () => {
     return (
         <ParticleBackground>
-            <section className="header">
+            <section id="home" className="header">
             <Fade left>
             <div className='intro'>
                 <h1 className="intro-line">
@@ -52,7 +54,6 @@ const Header = () => {
                     <span>e</span>
                     <span>b</span>
                 </h1>
-                <div>
                     <h1 className="typewriter">
                         <Typewriter
                             options={{
@@ -62,11 +63,19 @@ const Header = () => {
                             }}
                         />
 
-                    </h1>
-                </div>
-                <br />
-                <br/>
-
+                            </h1>
+                            <div className="social-links">
+                            <a href="https://linkedin.com/in/albiummid" target="_blank" rel="noreferrer" >
+                            <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/albiummid" target="_blank" rel="noreferrer" >
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:albiummid@gmail.com" target="_blank" rel="noreferrer" >
+                    <i class="far fa-envelope"></i>
+                    </a>
+                        </div>
+    
                 <a className="resume-link" href="https://drive.google.com/file/d/1qvSCGTt4FP6iZj7VphOcQOL7WIyu-lke/view?usp=sharing" target="_blank" rel="noreferrer">
                     <button className="main-btn">
                  Resume

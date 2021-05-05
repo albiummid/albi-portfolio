@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from './ProjectData'
 const Projects = () => {
-    console.log(projectData);
     return (
         <section id="project" className="section-container">
             <div className="section-header">
