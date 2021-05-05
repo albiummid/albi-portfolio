@@ -2,8 +2,6 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import Fade from 'react-reveal/Fade';
 import './ProjectCard.css'
-import Jello from 'react-reveal/Jello';
-import Zoom from 'react-reveal/Zoom';
 
 const ProjectCard = ({ data }) => {
     const { images, title, liveLink,description, repoLink, id,tools } = data;
